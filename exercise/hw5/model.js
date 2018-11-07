@@ -19,3 +19,9 @@ M.get = function (id) {
 M.list = function () {
   return posts
 }
+
+M.remove = function(id){
+  let post=posts[id]
+  posts[id]=null
+  return post
+}
